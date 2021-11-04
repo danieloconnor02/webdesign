@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+    body {
+  background-color: linen;
+}
+</style>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	
+	<!-- javascript -->
+	<script type="text/javascript">
+   //javascript comment
+   //document.write("Hello world ");
+   var message;
+   message = alert("Hello! This exam will tell you if your BMI is healthy.");
+   //default datatype from the prompt() is string or text
+
+   var numInteger = parseInt (message); //parsing my string to an integer
+
+   var result = numInteger + numInteger;
+   //alert("Addition for num1 + num1: " + result);
+
+   //multiply
+   result = numInteger * numInteger;
+   //alert("Multiplication for num1 * num1: " + result);
+
+   //divide
+
+   //subtract
+
+   var height; //declare vars
+   var weight;
+
+   //taking in and parsing numbers
+   height = parseInt(prompt("Enter your height in centimetres"));
+
+   weight = parseInt(prompt("Enter your weight in kilograms"));
+
+   if((height < 150) || (weight > 100)){
+      //if either side evaluates to true, state bigger then average
+      document.write("<br />You are overweight");
+   }
+
+   if((height > 300) && (weight < 200)){
+      //both side need to evaluate to true, give 2 pth
+      document.write("<br />You are underweight");
+   }
+
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+
+		//this is a var declare and value assigned
+		var name = "Jo";
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+
+	</script>
+  </head>
+  <body>
+	<p>Please go to the next page to order some weight supplements, we will need your address.</p>
+	<a href="page2.html">Page 2</a>
+
+
+  </body>
+</html>
